@@ -1,39 +1,34 @@
 @import "tailwindcss";
 
-@layer base {
-  :root {
-    --font-heading: 'Archivo Black', 'Syne', sans-serif;
-    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    --font-accent: 'Oswald', sans-serif;
-  }
+/* Editorial monochrome palette + type (exposed as bg-ink, text-cream, font-serif, ...) */
+@theme {
+  --color-ink: #1c1c1b;
+  --color-cream: #ece8e1;
+  --color-mute: #9b968e;
+  --color-line: #3a3936;
 
+  --font-serif: 'Cormorant Garamond', 'Times New Roman', serif;
+  --font-sans: 'Jost', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+@layer base {
   * {
     box-sizing: border-box;
   }
 
   body {
-    background-color: #111111;
-    color: #F3F4F6;
-    font-family: var(--font-body);
+    background-color: var(--color-ink);
+    color: var(--color-cream);
+    font-family: var(--font-sans);
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
   }
 
-  /* Custom heading typography */
+  /* Headings inside the chat + booking modals */
   .font-display {
-    font-family: 'Archivo Black', 'Syne', sans-serif;
-    letter-spacing: -0.04em;
-    text-transform: uppercase;
-  }
-
-  .font-body {
-    font-family: var(--font-body);
-  }
-
-  .font-condensed {
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: -0.02em;
+    font-family: var(--font-serif);
+    letter-spacing: 0;
     text-transform: uppercase;
   }
 }
@@ -43,17 +38,11 @@
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #111111;
+  background: var(--color-ink);
 }
 ::-webkit-scrollbar-thumb {
-  background: #27272a;
+  background: var(--color-line);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #BAC6B1;
-}
-
-/* Noise overlay effect (optional aesthetic touch) */
-.noise-bg {
-  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
-  background-size: 24px 24px;
+  background: var(--color-mute);
 }
