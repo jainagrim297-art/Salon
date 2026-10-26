@@ -140,7 +140,7 @@ export default function App() {
   const handleBookingSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch('http://127.0.0.1:8000/api/book', {
+      const res = await fetch('/api/book', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -181,7 +181,7 @@ export default function App() {
     setIsTyping(true);
 
     try {
-      const res = await fetch('http://127.0.0.1:8000/api/chat', {
+      const res = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: query })
