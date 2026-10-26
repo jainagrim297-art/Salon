@@ -297,7 +297,7 @@ export default function App() {
   ];
 
   const whatsappDirectUrl =
-    'https://wa.me/919845012345?text=Hello%20la%20cruz,%20I%20would%20like%20to%20inquire%20about%20a%20chair%20booking%20or%20private%20suite%20residency.';
+    'https://wa.me/919671967187?text=Hello%20la%20cruz,%20I%20would%20like%20to%20inquire%20about%20a%20chair%20booking%20or%20private%20suite%20residency.';
 
   return (
     <div className="min-h-screen bg-[#18181b] text-zinc-100 selection:bg-zinc-200 selection:text-zinc-900 font-sans relative overflow-x-hidden">
@@ -451,7 +451,7 @@ export default function App() {
                   rel="noopener noreferrer"
                   className="text-xs uppercase font-sans tracking-[0.28em] text-emerald-400 hover:text-emerald-300 flex items-center justify-center gap-1.5"
                 >
-                  <span>CHAT ON WHATSAPP (+91 98450 12345)</span>
+                  <span>CHAT ON WHATSAPP (+91 96719 67187)</span>
                 </a>
                 <a
                   href="#contact"
@@ -607,7 +607,7 @@ export default function App() {
                   Phone
                 </h3>
                 <p className="font-sans text-xs sm:text-sm tracking-widest text-zinc-400 font-light uppercase">
-                  (000) 000-0000 &bull; +91 98450 12345
+                  (000) 000-0000 &bull; +91 96719 67187
                 </p>
                 <div className="mt-2">
                   <a
@@ -874,7 +874,7 @@ export default function App() {
                     rel="noopener noreferrer"
                     className="text-emerald-400 hover:text-emerald-300 underline"
                   >
-                    +91 98450 12345
+                    +91 96719 67187
                   </a>
                 </p>
                 <p className="text-[11px] text-zinc-500 font-sans mt-1">
@@ -1287,7 +1287,7 @@ export default function App() {
                         <input
                           type="tel"
                           required
-                          placeholder="+91 98450 XXXXX"
+                          placeholder="+91 96719 XXXXX"
                           value={bookingForm.phone}
                           onChange={(e) => setBookingForm({ ...bookingForm, phone: e.target.value })}
                           className="w-full bg-[#161618] border border-zinc-700/80 text-xs text-zinc-100 placeholder-zinc-500 p-3 focus:border-white focus:outline-none font-sans"
@@ -1326,12 +1326,12 @@ export default function App() {
 
                   <div className="p-4 bg-[#141416] border border-zinc-800 text-xs text-zinc-400 mb-6 font-sans">
                     WhatsApp confirmation pass &amp; salon GPS pin dispatched to{' '}
-                    <span className="text-white font-medium">{bookingForm.phone || '+91 98450 XXXXX'}</span>
+                    <span className="text-white font-medium">{bookingForm.phone || '+91 96719 XXXXX'}</span>
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-3 justify-center">
                     <a
-                      href={`https://wa.me/919845012345?text=Hello%20la%20cruz,%20my%20booking%20ID%20is%20${confirmedBookingId}%20for%20${selectedTime}.`}
+                      href={`https://wa.me/919671967187?text=Hello%20la%20cruz,%20my%20booking%20ID%20is%20${confirmedBookingId}%20for%20${selectedTime}.`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-[#25D366] text-white text-xs font-sans uppercase tracking-wider py-3 px-6 rounded-full hover:bg-emerald-600 transition-colors flex items-center justify-center gap-2"
